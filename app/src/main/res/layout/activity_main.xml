@@ -249,6 +249,7 @@
         android:layout_height="98dp"
         android:text="Toby's Big Adventure"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         tools:layout_editor_absoluteY="100dp" />
 
