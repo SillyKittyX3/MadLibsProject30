@@ -37,15 +37,15 @@
         android:textSize="20sp"
         android:typeface="normal"
         app:layout_constraintEnd_toStartOf="@+id/guideline20"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline19"
         tools:layout_editor_absoluteY="2dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tv_story"
         android:layout_width="272dp"
         android:layout_height="430dp"
-        android:text="TextView"
+        android:hint="Story goes here"
         tools:layout_editor_absoluteX="75dp"
         tools:layout_editor_absoluteY="302dp" />
 
@@ -55,5 +55,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="300dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="271dp"
+        android:layout_height="223dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline20"
+        app:layout_constraintStart_toStartOf="@+id/guideline19"
+        app:srcCompat="@drawable/cat_park"
+        tools:layout_editor_absoluteY="78dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

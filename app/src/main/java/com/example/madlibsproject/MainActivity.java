@@ -2,7 +2,10 @@ package com.example.madlibsproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText etAdjective;
     private EditText etVerb;
     private EditText etNoun;
+    private Button btnGenerate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +38,26 @@ public class MainActivity extends AppCompatActivity {
         etAdjective = findViewById(R.id.et_adjective);
         etVerb = findViewById(R.id.et_verb);
         etNoun = findViewById(R.id.et_noun);
+
+        btnGenerate = findViewById(R.id.btn_generate);
+
+        Intent intentSecondary = new Intent(this, SecondaryActivity.class);
+
+        btnGenerate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String story = "";
+
+                story += "I went to eat a " + etFood.getText() + ". ";
+                story += "I told them that they need to painnt themselves " + etColor.getText() + ". ";
+                story += "";
+
+                intentSecondary.putExtra("story",story);
+                startActivity(intentSecondary);
+
+
+            }
+        });
 
     }
 }

@@ -203,7 +203,7 @@
         app:layout_constraintGuide_begin="444dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_generate"
         android:layout_width="143dp"
         android:layout_height="93dp"
         android:text="Generate"
