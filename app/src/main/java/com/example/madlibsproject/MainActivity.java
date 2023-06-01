@@ -48,14 +48,28 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String story = "";
 
-                story += "Toby is a small cat, a white and orange cat. " + "Toby is really silly, nothing can pass through that silly brain of his. " + "Toby's favorite dish is " + etFood.getText() + ".";
-                story += "As Toby is eating a giant " + etColor.getText() + "meteorite hits down his house. " + "Toby tries to relocate to " + etLocation.getText() + "This beings Toby's Great Adventure!! ";
-                story += "But first Toby invests in the " + etBusiness.getText() + "stocks for a chance of making it big in life. " + "As of right now Toby only as " + etAmountOfMoney.getText() + " in his bank account. ";
-                story += "As Toby tries to login, he forgets his password. Whats a Silly Cat he is." + "Toby is thinking of changing his password, Toby makes the decision of changing to " + etBadPassword.getText() + "Now lets hope he doesn't forget it.";
-                story += "Now that we get that out of the way, Toby brings his " + etShape.getText() + "mouse toy, this " + etShape.getText() + "mouse toy is only exclusive in his timeline, must be a really weird universe Toby lives in.";
-                story += "Toby was on the road, Toby can't drive since Cats are known for drinking milk while driving. " + "But Toby isn't like that, Toby is a small cat that would never do that. " + "As Toby " + etVerb.getText() + "with one eye closed he reaches his destination.";
-                story += "Toby is finally at " + etLocation.getText() + " ! Toby finds a new place to stay with his Family." + "The walk was not far from his parents place. as Toby pounces he sees a " + etNoun + "rolling in a 45 degreee angle down a hill.";
-                story += "Toby meets up with his cousins and family. " + "Toby is " + etAdjective.getText() + "to see his family." + "Toby's mom makes his favorite dish, " + etFood.getText() + " while everything is going well in live, Toby finally feels at home once again";
+                story   += "Toby is a small cat, a white and orange cat."
+                        + " Toby is really silly, nothing can pass through that silly brain of his."
+                        + " Toby's favorite dish is " + etFood.getText() + "."
+                        + " As Toby is eating, a giant " + etColor.getText() + " meteorite hits down his house."
+                        + " Toby tries to relocate to " + etLocation.getText() + "."
+                        + " This beings Toby's Great Adventure!!"
+                        + " But first Toby invests in the " + etBusiness.getText() + " stocks for a chance of making it big in life."
+                        + " As of right now Toby only has " + etAmountOfMoney.getText() + " in his bank account."
+                        + " As Toby tries to login, he forgets his password."
+                        + " What a Silly Cat he is."
+                        + " Toby is thinking of changing his password, Toby makes the decision of changing to " + etBadPassword.getText() + "."
+                        + " Now lets hope he doesn't forget it."
+                        + " Now that we get that out of the way, Toby brings his " + etShape.getText() + "mouse toy, this " + etShape.getText() + " mouse toy is only exclusive in his timeline, must be a really weird universe Toby lives in."
+                        + " Toby was on the road, Toby can't drive since Cats are known for drinking milk while driving. " + "But Toby isn't like that, Toby is a small cat that would never do that."
+                        + " As Toby, " + etVerb.getText() + " with one eye closed, reaches his destination."
+                        + " Toby is finally at " + etLocation.getText() + " !"
+                        + " Toby finds a new place to stay with his Family."
+                        + " The walk was not far from his parents place."
+                        + " As Toby pounces he sees a " + etNoun.getText() + " rolling in a 45 degreee angle down a hill."
+                        + " Toby meets up with his cousins and family. "
+                        + " Toby is " + etAdjective.getText() + " to see his family."
+                        + " Toby's mom makes his favorite dish, " + etFood.getText() + " while everything is going well in live, Toby finally feels at home once again";
 
                 intentSecondary.putExtra("story",story);
                 startActivity(intentSecondary);

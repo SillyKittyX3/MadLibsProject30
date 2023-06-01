@@ -24,7 +24,7 @@ public class SecondaryActivity extends AppCompatActivity {
 
         String story = intent.getStringExtra("story");
 
-        tvStory.setText("story");
+        tvStory.setText(story);
  }
 }
 
