@@ -56,13 +56,4 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="300dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="271dp"
-        android:layout_height="223dp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline20"
-        app:layout_constraintStart_toStartOf="@+id/guideline19"
-        app:srcCompat="@drawable/cat_park"
-        tools:layout_editor_absoluteY="78dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
